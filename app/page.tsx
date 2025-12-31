@@ -32,7 +32,7 @@ const projects = [
       "Full-stack motorcycle repair shop management system. Built with React 19 + TypeScript frontend and Node.js/Express + PostgreSQL backend. Features customer management, motorcycle inventory, service catalog, 6-state repair workflow with automatic cost calculation, and analytics dashboard. Modern architecture with TanStack Query, TypeORM, Redis, and JWT authentication.",
     tags: ["React", "Node", "PostgreSQL"],
     image: "/mossbros.png",
-    link: "https://mossbrossv.com",
+    link: "https://admin.mossbrossv.com/",
   },
   {
     title: "AuthentiDoc",
