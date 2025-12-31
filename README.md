@@ -2,7 +2,7 @@
 
 A modern, bilingual portfolio website showcasing my work as a Fullstack Developer and Founder at QuickStack. Built with the latest web technologies and best practices.
 
-🌐 **Live Demo:** [diegopardo.dev](https://diegopardo.dev)
+🌐 **Live Demo:** [diegopardo.vercel.app](https://diegopardo.vercel.app)
 
 ## ✨ Features
 
@@ -184,7 +184,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Connect
 
-- **Portfolio:** [diegopardo.dev](https://diegopardo.dev)
+- **Portfolio:** [diegopardo.vercel.app](https://diegopardo.vercel.app)
 - **LinkedIn:** [dev-pardx](https://www.linkedin.com/in/dev-pardx/)
 - **GitHub:** [DevPardx](https://github.com/DevPardx)
 - **Email:** technology@quickstack.agency
