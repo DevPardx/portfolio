@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     const subjects = emailSubjects[locale as keyof typeof emailSubjects] || emailSubjects.en
 
     const { data: notificationData, error: notificationError } = await resend.emails.send({
-      from: "Diego Pardo Portfolio <hello@quickstack.agency>",
+      from: "Diego Pardo <hello@quickstack.agency>",
       to: [process.env.CONTACT_EMAIL!],
       replyTo: validatedData.email,
       subject: subjects.notification,
@@ -70,7 +70,6 @@ export async function POST(request: NextRequest) {
     })
 
     if (notificationError) {
-      console.error("Notification email error:", notificationError)
       return NextResponse.json(
         { error: "Failed to send notification email. Please try again." },
         { status: 500 }
