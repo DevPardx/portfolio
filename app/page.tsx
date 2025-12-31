@@ -27,23 +27,17 @@ const skills = {
 
 const projects = [
   {
-    title: "Mossbros",
-    description:
-      "Full-stack motorcycle repair shop management system. Built with React 19 + TypeScript frontend and Node.js/Express + PostgreSQL backend. Features customer management, motorcycle inventory, service catalog, 6-state repair workflow with automatic cost calculation, and analytics dashboard. Modern architecture with TanStack Query, TypeORM, Redis, and JWT authentication.",
+    credentials: { user: "demo@mossbros.com", password: "demo123" },
     tags: ["React", "Node", "PostgreSQL"],
     image: "/mossbros.png",
-    link: "https://admin.mossbrossv.com/",
+    link: "https://mossbros-demo.vercel.app/login",
   },
   {
-    title: "AuthentiDoc",
-    description: "Decentralized document signing and management platform built on the Nostr protocol. PWA application with Rust/WebAssembly offering end-to-end encryption (NIP-44), multi-party signing, self-sovereign identity, and offline support via IndexedDB. Integrates Bitcoin Lightning Network and fiat payment gateways. No central servers - users maintain complete control over their data and cryptographic keys.",
     tags: ["Rust", "Nostr", "Axum"],
     image: "/authenticdoc.jpg",
     link: "https://authenticdoc.online",
   },
   {
-    title: "Raising Together Project",
-    description: "Raising Together Project (RTP) is a professional support platform founded by Becky Pineda, a certified Postpartum Doula. The project is dedicated to supporting families and new parents as they navigate the early stages of parenthood.",
     tags: ["TypeScript", "Next.js", "TailwindCSS"],
     image: "/rtp.png",
     link: "https://raisingtogetherproject.com/",
@@ -169,6 +163,8 @@ export default function PortfolioPage() {
                   src="/linkedin-pfp.jpeg"
                   alt="Diego Pardo"
                   className="size-full object-contain rounded-[22px] grayscale hover:grayscale-0 transition-all duration-700"
+                  width={593}
+                  height={584}
                 />
               </div>
               <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/20 blur-2xl animate-pulse" />
@@ -245,6 +241,8 @@ export default function PortfolioPage() {
                         src={project.image || "/placeholder.svg"}
                         alt={tProjects(`list.${i}.title`)}
                         className="h-full w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                        width={500}
+                        height={500}
                       />
                     </div>
                     <div className="flex flex-col justify-between">
@@ -265,12 +263,25 @@ export default function PortfolioPage() {
                         </div>
                         <p className="text-sm text-muted-foreground leading-relaxed">{tProjects(`list.${i}.description`)}</p>
                       </div>
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        {project.tags.map((tag) => (
-                          <span key={tag} className="text-xs font-mono text-primary/80">
-                            {tag}
-                          </span>
-                        ))}
+                      <div className="mt-4 flex flex-col flex-wrap gap-2">
+                          { project.credentials && (
+                            <>
+                              <span key={project.credentials?.user} className="text-xs font-mono text-primary/80">
+                                User: {project.credentials?.user}
+                              </span>
+                              <span key={project.credentials?.password} className="text-xs font-mono text-primary/80">
+                                Password: {project.credentials?.password}
+                              </span>
+                            </>
+                          ) }
+
+                          <div className={`flex flex-wrap gap-2 ${project.credentials ? 'mt-2' : ''}`}>
+                            {project.tags.map((tag) => (
+                              <span key={tag} className="text-xs font-mono text-primary/80">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
                       </div>
                     </div>
                   </motion.div>
