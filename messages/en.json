@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "name": "Diego Pardo",
+    "title": "Fullstack Developer | Founder at Quick Stack | Building MVPs for Early-Stage",
+    "description": "I help non-technical founders transform their ideas into production-ready products. I specialize in building MVPs that validate business concepts quickly—typically within 4 weeks.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "location": "San Salvador, El Salvador",
+    "availability": "Available for MVPs & Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "My journey into software development started at Ricaldone Technical Institute, where I graduated as a Software Development Technician. Now, while pursuing my Computer Science Engineering degree at Don Bosco University, I'm actively working as a Software Engineer at Illuminodes and running my own development agency, QuickStack.",
+    "paragraph2": "What drives me is the intersection of code and entrepreneurship. I don't just build features—I help validate business ideas. Whether you're a startup founder needing your first MVP or an established business looking to modernize your tech stack, I bring both technical expertise and a founder's mindset to every project.",
+    "paragraph3": "My technical foundation spans the modern JavaScript ecosystem (React, Next.js, TypeScript, Node.js) with expertise in both relational and non-relational databases. I'm also expanding into Rust and WebAssembly for performance-critical applications.",
+    "paragraph4": "When I'm not coding, I'm either learning new technologies through hands-on projects, validating startup ideas in the Salvadoran market, or helping other developers level up their skills.",
+    "downloadResume": "Download Resume"
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "period": "2021 — 2023",
+        "role": "Freelance Web Developer",
+        "company": "Self-Employed",
+        "description": "Delivered full-stack solutions for various clients, specializing in modern JavaScript frameworks and database optimization using ORMs like Sequelize and Mongoose."
+      },
+      {
+        "period": "2024 — PRESENT",
+        "role": "Software Engineer",
+        "company": "Illuminodes",
+        "description": "Developing interactive and scalable applications using technologies like TypeScript, ReactJS, and Next.js. Building dynamic user interfaces and optimizing backend performance."
+      },
+      {
+        "period": "2025 — PRESENT",
+        "role": "Founder",
+        "company": "QuickStack",
+        "description": "Leading an MVP development agency focused on helping early-stage founders validate business concepts. Built multiple production-ready products within 4-week cycles."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "title": "Mossbros",
+        "description": "Full-stack motorcycle repair shop management system. Built with React 19 + TypeScript frontend and Node.js/Express + PostgreSQL backend. Features customer management, motorcycle inventory, service catalog, 6-state repair workflow with automatic cost calculation, and analytics dashboard. Modern architecture with TanStack Query, TypeORM, Redis, and JWT authentication."
+      },
+      {
+        "title": "AuthentiDoc",
+        "description": "Decentralized document signing and management platform built on the Nostr protocol. PWA application with Rust/WebAssembly offering end-to-end encryption (NIP-44), multi-party signing, self-sovereign identity, and offline support via IndexedDB. Integrates Bitcoin Lightning Network and fiat payment gateways. No central servers - users maintain complete control over their data and cryptographic keys."
+      },
+      {
+        "title": "Raising Together Project",
+        "description": "Raising Together Project (RTP) is a professional support platform founded by Becky Pineda, a certified Postpartum Doula. The project is dedicated to supporting families and new parents as they navigate the early stages of parenthood."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "tools": "Tools"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or just want to say hi? My inbox is always open.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "success": "Thank you for reaching out. I'll get back to you soon!",
+    "error": "Failed to send message, please try again later.",
+    "rateLimitError": "You've already submitted a message recently. Please wait {minutes} minutes before trying again."
+  }
+}

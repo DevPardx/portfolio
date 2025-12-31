@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "hireMe": "Contrátame"
+  },
+  "hero": {
+    "name": "Diego Pardo",
+    "title": "Desarrollador Fullstack | Fundador en Quick Stack | Construyendo MVPs para Startups",
+    "description": "Ayudo a fundadores no técnicos a transformar sus ideas en productos listos para producción. Me especializo en construir MVPs que validan conceptos de negocio rápidamente—típicamente en 4 semanas.",
+    "viewProjects": "Ver Proyectos",
+    "contactMe": "Contáctame",
+    "location": "San Salvador, El Salvador",
+    "availability": "Disponible para MVPs y Proyectos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Mi viaje en el desarrollo de software comenzó en el Instituto Técnico Ricaldone, donde me gradué como Técnico en Desarrollo de Software. Ahora, mientras curso mi carrera de Ingeniería en Ciencias de la Computación en la Universidad Don Bosco, trabajo activamente como Ingeniero de Software en Illuminodes y dirijo mi propia agencia de desarrollo, QuickStack.",
+    "paragraph2": "Lo que me impulsa es la intersección entre el código y el emprendimiento. No solo construyo funcionalidades—ayudo a validar ideas de negocio. Ya sea que seas un fundador de startup que necesita su primer MVP o un negocio establecido que busca modernizar su stack tecnológico, aporto tanto experiencia técnica como mentalidad de fundador a cada proyecto.",
+    "paragraph3": "Mi base técnica abarca el ecosistema moderno de JavaScript (React, Next.js, TypeScript, Node.js) con experiencia en bases de datos relacionales y no relacionales. También me estoy expandiendo en Rust y WebAssembly para aplicaciones críticas de rendimiento.",
+    "paragraph4": "Cuando no estoy programando, estoy aprendiendo nuevas tecnologías a través de proyectos prácticos, validando ideas de startup en el mercado salvadoreño, o ayudando a otros desarrolladores a mejorar sus habilidades.",
+    "downloadResume": "Descargar CV"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "jobs": [
+      {
+        "period": "2021 — 2023",
+        "role": "Desarrollador Web Freelance",
+        "company": "Independiente",
+        "description": "Entregué soluciones full-stack para varios clientes, especializándome en frameworks modernos de JavaScript y optimización de bases de datos usando ORMs como Sequelize y Mongoose."
+      },
+      {
+        "period": "2024 — PRESENTE",
+        "role": "Ingeniero de Software",
+        "company": "Illuminodes",
+        "description": "Desarrollo de aplicaciones interactivas y escalables usando tecnologías como TypeScript, ReactJS y Next.js. Construcción de interfaces de usuario dinámicas y optimización del rendimiento del backend."
+      },
+      {
+        "period": "2025 — PRESENTE",
+        "role": "Fundador",
+        "company": "QuickStack",
+        "description": "Liderando una agencia de desarrollo de MVPs enfocada en ayudar a fundadores en etapas tempranas a validar conceptos de negocio. Construí múltiples productos listos para producción en ciclos de 4 semanas."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "list": [
+      {
+        "title": "Mossbros",
+        "description": "Sistema de gestión de taller de reparación de motocicletas full-stack. Construido con frontend React 19 + TypeScript y backend Node.js/Express + PostgreSQL. Incluye gestión de clientes, inventario de motocicletas, catálogo de servicios, flujo de reparación de 6 estados con cálculo automático de costos y panel de análisis. Arquitectura moderna con TanStack Query, TypeORM, Redis y autenticación JWT."
+      },
+      {
+        "title": "AuthentiDoc",
+        "description": "Plataforma descentralizada de firma y gestión de documentos construida sobre el protocolo Nostr. Aplicación PWA con Rust/WebAssembly que ofrece encriptación de extremo a extremo (NIP-44), firma multiparte, identidad autosoberana y soporte offline vía IndexedDB. Integra Bitcoin Lightning Network y pasarelas de pago fiat. Sin servidores centrales - los usuarios mantienen control completo sobre sus datos y claves criptográficas."
+      },
+      {
+        "title": "Raising Together Project",
+        "description": "Raising Together Project (RTP) es una plataforma de apoyo profesional fundada por Becky Pineda, una Doula Postparto certificada. El proyecto está dedicado a apoyar a familias y nuevos padres mientras navegan las etapas tempranas de la paternidad."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "tools": "Herramientas"
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Tienes un proyecto en mente o solo quieres saludar? Mi bandeja de entrada siempre está abierta.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando..."
+    },
+    "success": "¡Gracias por contactarme! Te responderé pronto.",
+    "error": "Error al enviar el mensaje, por favor intenta de nuevo más tarde.",
+    "rateLimitError": "Ya has enviado un mensaje recientemente. Por favor espera {minutes} minutos antes de intentar de nuevo."
+  },
+  "footer": {
+    "copyright": "© 2025 Diego Pardo. Construido con Next.js, Framer Motion y Tailwind CSS."
+  }
+}
