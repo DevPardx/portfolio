@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
     }
 
     const { data: autoResponseData } = await resend.emails.send({
-      from: "Diego Pardo <diego.pardo@quickstack.agency>",
+      from: "Diego Pardo <diego@quickstack.agency>",
       to: [validatedData.email],
       subject: subjects.autoResponse,
       html: autoResponseHtml,

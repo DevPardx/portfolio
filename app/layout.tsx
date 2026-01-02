@@ -20,9 +20,74 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Full-Stack Developer | Portfolio",
-  description: "Building scalable web solutions with modern technologies.",
-  keywords: ["TypeScript", "React", "Next.js", "Node.js", "Rust", "Full-Stack Developer"],
+  metadataBase: new URL('https://diegopardo.vercel.app'),
+  title: {
+    default: "Diego Pardo | Full-Stack Developer & Software Engineer",
+    template: "%s | Diego Pardo"
+  },
+  description: "Experienced Full-Stack Developer specializing in TypeScript, React, Next.js, Node.js, and Rust. Building scalable, modern web applications and MVPs. Available for freelance projects and consulting.",
+  keywords: [
+    "Diego Pardo",
+    "Full-Stack Developer",
+    "Software Engineer",
+    "TypeScript Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "Rust Developer",
+    "Web Development",
+    "Frontend Developer",
+    "Backend Developer",
+    "Freelance Developer",
+    "MVP Development",
+    "Quickstack Agency",
+  ],
+  authors: [{ name: "Diego Pardo", url: "https://diegopardo.vercel.app" }],
+  creator: "Diego Pardo",
+  publisher: "Diego Pardo",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    alternateLocale: ["es_ES"],
+    url: "https://diegopardo.vercel.app",
+    title: "Diego Pardo | Full-Stack Developer & Software Engineer",
+    description: "Experienced Full-Stack Developer specializing in TypeScript, React, Next.js, Node.js, and Rust. Building scalable, modern web applications and MVPs.",
+    siteName: "Diego Pardo Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Diego Pardo - Full-Stack Developer Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Diego Pardo | Full-Stack Developer & Software Engineer",
+    description: "Experienced Full-Stack Developer specializing in TypeScript, React, Next.js, Node.js, and Rust. Building scalable web applications.",
+    images: ["/og-image.png"],
+    creator: "@diegopardo",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
 }
 
 export default async function RootLayout({
@@ -34,8 +99,51 @@ export default async function RootLayout({
   const locale = cookieStore.get("NEXT_LOCALE")?.value || "en"
   const messages = await getMessages()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Diego Pardo',
+    jobTitle: 'Full-Stack Developer',
+    description: 'Experienced Full-Stack Developer specializing in TypeScript, React, Next.js, Node.js, and Rust',
+    url: 'https://diegopardo.vercel.app',
+    email: 'diego@quickstack.agency',
+    image: 'https://diegopardo.vercel.app/linkedin-pfp.jpeg',
+    sameAs: [
+      'https://github.com/DevPardx',
+      'https://www.linkedin.com/in/dev-pardx/',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'San Salvador',
+      addressCountry: 'El Salvador',
+    },
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Quickstack Agency',
+      url: 'https://quickstack.agency',
+    },
+    knowsAbout: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Node.js',
+      'Rust',
+      'PostgreSQL',
+      'MongoDB',
+      'Full-Stack Development',
+      'Web Development',
+      'Software Engineering',
+    ],
+  }
+
   return (
     <html lang={locale} className="dark scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}

@@ -185,6 +185,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Connect
 
 - **Portfolio:** [diegopardo.vercel.app](https://diegopardo.vercel.app)
-- **LinkedIn:** [dev-pardx](https://www.linkedin.com/in/dev-pardx/)
 - **GitHub:** [DevPardx](https://github.com/DevPardx)
-- **Email:** technology@quickstack.agency
+- **Email:** diego@quickstack.agency

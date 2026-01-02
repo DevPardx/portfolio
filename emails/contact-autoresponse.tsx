@@ -81,8 +81,8 @@ export const ContactAutoResponseEmail = ({
             </Text>
             <Text style={calloutSubtext}>
               {t.urgentText}{" "}
-              <Link href="mailto:diego.pardo@quickstack.agency" style={link}>
-                diego.pardo@quickstack.agency
+              <Link href="mailto:diego@quickstack.agency" style={link}>
+                diego@quickstack.agency
               </Link>
             </Text>
           </Section>
@@ -128,8 +128,8 @@ export const ContactAutoResponseEmail = ({
 
           <Text style={footer}>
             {t.footerText}{" "}
-            <Link href="mailto:diego.pardo@quickstack.agency" style={footerLink}>
-              diego.pardo@quickstack.agency
+            <Link href="mailto:diego@quickstack.agency" style={footerLink}>
+              diego@quickstack.agency
             </Link>
           </Text>
         </Container>

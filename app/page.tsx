@@ -54,7 +54,7 @@ export default function PortfolioPage() {
 
   useEffect(() => {
     console.log("%c👋 Hey there! Looking for an MVP?", "color: #3b82f6; font-size: 20px; font-weight: bold;")
-    console.log("I build production-ready products in 4 weeks. Let's talk: diego.pardo@quickstack.agency")
+    console.log("I build production-ready products in 4 weeks. Let's talk: diego@quickstack.agency")
   }, [])
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -161,10 +161,11 @@ export default function PortfolioPage() {
               <div className="relative z-10 overflow-hidden rounded-3xl border border-white/10 bg-linear-to-b from-primary/10 to-transparent p-1 shadow-2xl">
                 <Image
                   src="/linkedin-pfp.jpeg"
-                  alt="Diego Pardo"
+                  alt="Diego Pardo - Full-Stack Developer specializing in TypeScript, React, Next.js, Node.js and Rust"
                   className="size-full object-contain rounded-[22px] grayscale hover:grayscale-0 transition-all duration-700"
                   width={593}
                   height={584}
+                  priority
                 />
               </div>
               <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/20 blur-2xl animate-pulse" />
@@ -239,10 +240,11 @@ export default function PortfolioPage() {
                     <div className="relative aspect-video overflow-hidden rounded-lg border border-border/50 lg:aspect-square">
                       <Image
                         src={project.image || "/placeholder.svg"}
-                        alt={tProjects(`list.${i}.title`)}
+                        alt={`${tProjects(`list.${i}.title`)} - ${tProjects(`list.${i}.description`)}`}
                         className="h-full w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
                         width={500}
                         height={500}
+                        loading="lazy"
                       />
                     </div>
                     <div className="flex flex-col justify-between">
@@ -389,11 +391,11 @@ export default function PortfolioPage() {
 
               <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 border-t border-border pt-12">
                 <a
-                  href="mailto:diego.pardo@quickstack.agency"
+                  href="mailto:diego@quickstack.agency"
                   className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                 >
                   <Mail size={16} />
-                  diego.pardo@quickstack.agency
+                  diego@quickstack.agency
                 </a>
                 <span className="hidden md:block text-muted-foreground/30">|</span>
                 <div className="flex gap-6">
