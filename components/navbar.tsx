@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useTranslations } from "next-intl"
 import { LanguageToggle } from "./language-toggle"
+import Link from "next/link"
 
 export function Navbar() {
     const t = useTranslations("nav")
@@ -84,14 +85,14 @@ export function Navbar() {
                     >
                         <div className="flex flex-col space-y-4 p-6">
                             {navLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.name}
                                     href={link.href}
                                     className="text-lg font-medium text-muted-foreground"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             ))}
                             <div className="pt-4 border-t border-border/50">
                                 <LanguageToggle />

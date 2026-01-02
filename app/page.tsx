@@ -139,7 +139,7 @@ export default function PortfolioPage() {
                 className="flex flex-wrap gap-4 pt-4"
               >
                 <Button size="lg" className="rounded-full px-8 shadow-xl shadow-primary/20" asChild>
-                  <a href="#projects">{tHero("viewProjects")}</a>
+                  <Link href="#projects">{tHero("viewProjects")}</Link>
                 </Button>
                 <Button
                   size="lg"
@@ -340,6 +340,7 @@ export default function PortfolioPage() {
                           className="bg-white/2 border-white/10"
                           disabled={isSubmitting}
                           aria-invalid={errors.name ? "true" : "false"}
+                          autoComplete="name"
                         />
                         {errors.name && (
                           <p className="text-xs text-red-500">{errors.name.message}</p>
@@ -356,6 +357,7 @@ export default function PortfolioPage() {
                           className="bg-white/2 border-white/10"
                           disabled={isSubmitting}
                           aria-invalid={errors.email ? "true" : "false"}
+                          autoComplete="email"
                         />
                         {errors.email && (
                           <p className="text-xs text-red-500">{errors.email.message}</p>
@@ -372,6 +374,7 @@ export default function PortfolioPage() {
                         className="min-h-30 bg-white/2 border-white/10"
                         disabled={isSubmitting}
                         aria-invalid={errors.message ? "true" : "false"}
+                        autoComplete="message"
                       />
                       {errors.message && (
                         <p className="text-xs text-red-500">{errors.message.message}</p>
@@ -390,21 +393,21 @@ export default function PortfolioPage() {
               </Card>
 
               <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 border-t border-border pt-12">
-                <a
+                <Link
                   href="mailto:diego@quickstack.agency"
                   className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                 >
                   <Mail size={16} />
                   diego@quickstack.agency
-                </a>
+                </Link>
                 <span className="hidden md:block text-muted-foreground/30">|</span>
                 <div className="flex gap-6">
-                  <a href="https://github.com/DevPardx" className="text-muted-foreground transition-colors hover:text-primary">
+                  <Link href="https://github.com/DevPardx" className="text-muted-foreground transition-colors hover:text-primary">
                     <Github size={20} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/dev-pardx/" className="text-muted-foreground transition-colors hover:text-primary">
+                  </Link>
+                  <Link href="https://www.linkedin.com/in/dev-pardx/" className="text-muted-foreground transition-colors hover:text-primary">
                     <Linkedin size={20} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </section>
